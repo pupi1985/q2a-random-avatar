@@ -1,0 +1,13 @@
+{
+	"name": "PUPI - Random Avatar",
+	"uri": "http://github.com/pupi1985/q2a-random-avatar",
+	"description": "Assigns new users a random avatar from a given set",
+	"version": "1.0.1",
+	"date": "2014-11-30",
+	"author": "Gabriel Zanetti",
+	"author_uri": "http://question2answer.org/qa/user/pupi1985",
+	"license": "GPLv3",
+	"update_uri": "https://raw.githubusercontent.com/pupi1985/q2a-random-avatar/master/metadata.json",
+	"min_q2a": "1.6",
+	"min_php": "5.1.2"
+}

@@ -11,7 +11,7 @@
 	Plugin License: GPLv3
 	Plugin Minimum Question2Answer Version: 1.6
 	Plugin Minimum PHP Version: 5.1.2
-	Plugin Update Check URI: https://raw.githubusercontent.com/pupi1985/q2a-random-avatar/master/qa-plugin.php
+	Plugin Update Check URI: https://raw.githubusercontent.com/pupi1985/q2a-random-avatar/master/metadata.json
 */
 
 /*
