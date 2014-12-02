@@ -35,10 +35,7 @@ class PUPI_RA_Module_Admin {
 	const LANG_ID_ADMIN_SAVE_SETTINGS_BUTTON = 'admin_save_settings_button';
 	const LANG_ID_ADMIN_PLUGIN_ENABLED = 'admin_plugin_enabled';
 
-	public function load_module($directory, $urltoroot) {
-	}
-
-	private static function translate($id) {
+	public static function translate($id) {
 		return qa_lang_html('pupi_ra/' . $id);
 	}
 
@@ -54,7 +51,7 @@ class PUPI_RA_Module_Admin {
 		$ok = null;
 		if (qa_clicked(self::BUTTON_SAVE)) {
 			$this->savePluginEnabledSetting();
-			$ok = $this->translate(self::LANG_ID_ADMIN_SETTINGS_SAVED);
+			$ok = self::translate(self::LANG_ID_ADMIN_SETTINGS_SAVED);
 		}
 		$fields = array_merge(
 			$this->getPluginEnabledField()
@@ -71,7 +68,7 @@ class PUPI_RA_Module_Admin {
 		return array(
 			'save' => array(
 				'tags' => 'name="' . self::BUTTON_SAVE . '"',
-				'label' => $this->translate(self::LANG_ID_ADMIN_SAVE_SETTINGS_BUTTON),
+				'label' => self::translate(self::LANG_ID_ADMIN_SAVE_SETTINGS_BUTTON),
 			),
 		);
 	}
@@ -80,13 +77,15 @@ class PUPI_RA_Module_Admin {
 
 	private function getPluginEnabledField() {
 		return array(array(
-			'label' => $this->translate(self::LANG_ID_ADMIN_PLUGIN_ENABLED),
+			'label' => self::translate(self::LANG_ID_ADMIN_PLUGIN_ENABLED),
 			'style' => 'tall',
 			'tags' => 'name="' . self::SETTING_PLUGIN_ENABLED . '"',
 			'type' => 'checkbox',
 			'value' => (bool) qa_opt(self::SETTING_PLUGIN_ENABLED),
 		));
 	}
+
+	// All field saving methods
 
 	private function savePluginEnabledSetting() {
 		qa_opt(self::SETTING_PLUGIN_ENABLED, (bool) qa_post_text(self::SETTING_PLUGIN_ENABLED));
