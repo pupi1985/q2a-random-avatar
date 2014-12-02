@@ -4,14 +4,14 @@
 	Plugin Name: PUPI - Random Avatar
 	Plugin URI: http://github.com/pupi1985/q2a-random-avatar
 	Plugin Description: Assigns new users a random avatar from a given set
-	Plugin Version: 1.0.0
-	Plugin Date: 2014-10-18
+	Plugin Version: 1.0.1
+	Plugin Date: 2014-12-01
 	Plugin Author: Gabriel Zanetti
 	Plugin Author URI: http://question2answer.org/qa/user/pupi1985
 	Plugin License: GPLv3
 	Plugin Minimum Question2Answer Version: 1.6
 	Plugin Minimum PHP Version: 5.1.2
-	Plugin Update Check URI: https://raw.githubusercontent.com/pupi1985/q2a-random-avatar/master/metadata.json
+	Plugin Update Check URI: https://raw.githubusercontent.com/pupi1985/q2a-random-avatar/master/qa-plugin.php
 */
 
 /*
