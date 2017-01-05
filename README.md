@@ -28,7 +28,7 @@ Setup comments
 About the default avatar setting
 --------------------------------
 
-In *Admin -> Users* there is a *Default avatar* setting. It doesn't interfere with the plugin at all. That setting controls what avatar should be displayed for users who have not set any avatar yet after registration. The Random Avatar plugin immediately assigns an avatar to all users so those users will hava an avatar set so no new user will use the default avatar.
+In *Admin -> Users* there is a *Default avatar* setting. It doesn't interfere with the plugin at all. That setting controls what avatar should be displayed for users who have not set any avatar yet after registration. The Random Avatar plugin immediately assigns an avatar to all users so those users will have an avatar set so no new user will use the default avatar.
 
 However, all users created before enabling Random Avatar who have never set an avatar in their profiles will be displayed the default avatar or none, if the *Default avatar* setting is disabled.
 
